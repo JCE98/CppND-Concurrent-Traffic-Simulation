@@ -107,13 +107,9 @@ void TrafficLight::cycleThroughPhases()
             {
                 _currentPhase = TrafficLightPhase::green;
             }
-            else if(_currentPhase ==TrafficLightPhase::green)
-            {
-                _currentPhase = TrafficLightPhase::red;
-            }
             else
             {
-                std::cout<<"Invalid phase of TrafficLight Object"<<std::endl;
+                _currentPhase = TrafficLightPhase::red;
             }
 
             // Send an update to the message queue and wait for it to be sent
