@@ -59,7 +59,7 @@ void TrafficLight::waitForGreen()
         _currentPhase = _queue->Receive();
 
         // Check if the TrafficLight::_currentPhase is green
-        if(_currentPhase==TrafficLightPhase::red)
+        if(_currentPhase==TrafficLightPhase::green)
         {
             return;
         }
